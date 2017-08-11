@@ -1,0 +1,41 @@
+{
+  "name": "run-tests-parallel",
+  "version": "1.0.0",
+  "description": "Run test scripts in parallel",
+  "main": "dist/bundle.js",
+  "jsnext:main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "npm run build && cd test && node run.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "harness",
+    "runner",
+    "parallel"
+  ],
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "ps-tree": "^1.1.0",
+    "tap-merge": "^0.3.1",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "rollup": "^0.45.2",
+    "tap": "^10.7.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/run_tests_parallel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/run_tests_parallel/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/run_tests_parallel#readme"
+}
